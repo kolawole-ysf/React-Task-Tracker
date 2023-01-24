@@ -1,13 +1,88 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.component{
+  min-width: 500px;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 12px black;
+  padding: 20px;
+  color: black;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h1{
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+}
+.btn{
+  padding: 10px 16px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+.btn-large{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.task{
+  background-color: white;
+  color: black;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.task h3{
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.task p{
+  font-size: 16px;
+}
+.form{
+  padding: 20px 0px;
+  width: 100%;
+}
+.form-group{
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+label{
+  margin-right: 100px;
+  font-size: 14px;
+  color: darkgray;
+  padding: 0px 10px;
+}
+
+.form-group input:not([type="checkbox"]){
+  width: 100%;
+  padding: 10px;
+  caret-color: green;
+  border: none;
+}
+.form-group input:focus{
+  outline: none;
+  box-shadow: 1px 1px 4px rgb(46, 43, 43);
 }
